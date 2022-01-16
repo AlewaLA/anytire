@@ -1,0 +1,101 @@
+html {scroll-behavior: smooth;}
+body {margin: 0; padding: 0; font-size: 18px; font-family: 'Poppins', sans-serif; line-height: 20px;}
+a {text-decoration: none; list-style: none; color: #0275d8; font-weight: 500px;}
+a:hover {color: blue;}
+
+
+/*Scroll back to top*/
+.to-top{background: #0275d8; color: #fff; position: fixed; bottom: 16px; right: 32px; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content:
+center; font-size: 32px; text-decoration: none; opacity: 0; pointer-events: none; transition: all .4s;}
+.to-top.active{bottom: 32px; text-decoration: none; pointer-events: auto; opacity: 1;}
+.to-top:hover {background: blue; color: #fff;}
+
+.cover {position: relative; z-index: 0; width: 100%; background: black;}
+.phone {z-index: 1; font-weight: 200;}
+.phone i {color:;}
+.phone a {font-size: 15px; font-weight: bold;}
+.social-icon {display: inline-block;}
+.social-icon p {display: block; width: 100%;}
+.social-icon p a {height: 55px; margin-right: 10px;}
+.social-icon .fa-facebook{color: blue;}
+.social-icon .fa-twitter{color: #0275d8;}
+.social-icon .fa-instagram{color: violet;}
+.social-icon .fa-youtube{color: red;}
+.social-icon p a i {font-size: 17px; color: ;}
+.social-icon p a:hover {background:; border-color:;}
+.social-icon p a:hover i {color:;}
+
+#search {background-image:url(./search.png);background-position: 7px 7px; background-repeat: no-repeat; white-space: normal; object-fit: fill; padding: 7px 20px 7px 40px; }
+
+.title {color: #0275d8; margin-bottom: 20px;}
+.title::before {content: ''; background: blue; height: 5px; width: 100px; margin-left: auto; margin-right: auto; display: block; transform: translateY(63px);}
+
+.main-btn {background-color: #0275d8; display: inline-block; padding: 3px 6px; line-height: 1.5625rem; border: 0.1875rem solid #0275d8; color: #ffff; font-size: 0.9375rem; 
+font-weight: 500; text-transform: capitalize; box-shadow: none; -webkit-transition: all .4s ease-out 0s; -o-transition: all .4s ease-out 0s; 
+-moz-transition: all .4s ease-out 0s; transition: all .4s ease-out 0s;}
+.main-btn:hover {background-color: blue; border: 0.1875rem solid blue; color: #fff;}
+
+.sub-btn {border: 2px solid #0275d8; padding: 5px 6px;}
+.sub-btn:hover {border: 2px solid blue; color: blue;}
+
+
+.note {position: relative;}
+.fa-badge {position: absolute; top: -9px; right: -9px; width: 22px; height:22px; background-color: #0275d8; color: #fff; display: flex; justify-content: center;
+ align-items: center; border-radius: 50%;}
+ 
+ @media only screen and (max-width: 768px) {
+	 .fa-badge {position: relative; top: -34px; right: -60px; width: 22px; height:22px; background-color: #0275d8; color: #fff; display: flex; justify-content: center;
+ align-items: center; border-radius: 50%;}
+ }
+ 
+/*index page banner slick slider css*/
+.site-slider {position: relative; padding-bottom: 100px;}
+.position-top {position: absolute; top: 37%;}
+.site-slider .slider-btn .prev, .site-slider .slider-btn .next {color: #fff; padding: 1rem 1.5rem; opacity: 0; transition:opacity 1s ease;}
+.site-slider:hover .slider-btn .prev, .site-slider:hover .slider-btn .next {opacity: 1;}
+.site-slider .slider-btn .prev:hover, .site-slider .slider-btn .next:hover {color: #0275d8;}
+.right-0 {right: 0;}
+.slick-dots {display: flex; justify-content: center; margin: 0; padding: 1rem 0; list-style-type: none; position: absolute; bottom: 0; right: 45%;}
+.slick-dots li {margin: 0 0.6rem;}
+.slick-dots button {display: block; width: .5rem; height: 0.5rem; padding: 0; border: none; background-color: #fff; text-indent: -99999px; border-radius: 100%;}
+.slick-dots li.slick-active button {transform: scale(2.5); box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.205); background-color: #0275d8;}
+.sub {position: absolute; top: 45%;}
+.sub h1 {color: #0275d8; margin-left: 100px; font-weight: bold; padding-bottom: 10px;}
+.sub p {color: #fff; margin-left: 100px; font-size: 40px;}
+
+@media only screen and (max-width: 768px) {
+  .sub {position: absolute; top: 45%;}
+  .sub h1 {color: #0275d8; margin-left: 57px; font-weight: 25px;}
+  .sub p {color: #fff; margin-left: 57px; font-size: 20px;}
+  .site-slider img {height: 200px;}
+}
+
+.site-slider-two {position: relative; height: 30%; background-color: #f1f1f1;}
+.site-slider-two .product {position: relative; overflow: hidden;}
+.site-slider-two .product img {width: 90%; margin: auto;}
+
+.pros{padding-top: 100px; padding-bottom: 70px;}
+.pros img{transition: all 0.3s ease-in-out;}
+.pros .what:hover img{transform: scale(1.1);}
+
+.call {background-color:#f1f1f1;}
+.call span {color:#0275d8;}
+.call .cons {padding-top: 50px; padding-bottom: 50px;}
+.call h2 {font-weight: bold;}
+
+.blog {padding-top: 100px;}
+.blog img{transition: all 0.3s ease-in-out;}
+.blog .what:hover img{transform: scale(1.1); opacity: 0.7;}
+
+/*Footer css*/
+.footer{margin-top: 100px; background-color: #f1f1f1;}
+.footer h3{color: blue;}
+.footer p{color: #0275d8;}
+.footer .fa-facebook{color: blue;}
+.footer .fa-twitter{color: #0275d8;}
+.footer .fa-instagram{color: violet;}
+.footer .fa-youtube{color: red;}
+.footer a{color: #0275d8;}
+.footer a:hover{color: blue;}
+.copy{background-color: #cccc;}
+
